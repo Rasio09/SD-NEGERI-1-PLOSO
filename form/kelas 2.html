@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Input Kelas 2 - SDN 1 PLOSO</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Free HTML Templates" name="keywords" />
+    <meta content="Free HTML Templates" name="description" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="../img/logo.ico" type="image/x-icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handlee&family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Flaticon Font -->
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-light position-relative shadow">
+      <nav
+        class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5">
+        <a href="index.html"
+          class="navbar-brand font-weight-bold text-secondary"
+          style="font-size: 50px" >
+          <img src="../img/logo.png" alt="" style="width: 40px;">
+          <span class="text-primary" style="font-size: 30pt; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">SDN 1 PLOSO</span>
+        </a>
+        <button type="button"
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between"
+          id="navbarCollapse">
+          <div class="navbar-nav font-weight-bold mx-auto py-0">
+            <a href="../index.html" class="nav-item nav-link active">Home</a>
+            <div class="nav-item dropdown">
+              <a href="#"
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown">About</a>
+              <div class="dropdown-menu rounded-0 m-0">
+                <a href="../about.html" class="dropdown-item">About</a>
+                <a href="../blog.html" class="dropdown-item">Visi</a>
+                <a href="../single.html" class="dropdown-item">Misi</a>
+              </div>
+            </div>
+            <a href="../class.html" class="nav-item nav-link">Class</a>
+            <a href="../team.html" class="nav-item nav-link">Teacher</a>
+            
+            <a href="../contact.html" class="nav-item nav-link">Contact</a>
+          </div>
+          <a href="../input form.html" class="btn btn-primary px-4" style="font-size: 9pt;">7 KEBIASAAN ANAK INDONESIA HEBAT</a>
+        </div>
+      </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary mb-5">
+      <div
+        class="d-flex flex-column align-items-center justify-content-center"
+        style="min-height: 400px"
+      >
+        <h3 class="display-3 font-weight-bold text-white">INPUT KELAS 2</h3>
+      </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- ISIKANkonten form -->
+    <div class="container">
+  <!-- Tabel Siswa -->
+  <h4 class="mb-3">Daftar Siswa</h4>
+  <table class="table table-bordered table-striped mb-3">
+    <thead class="thead-dark">
+      <tr>
+        <th>No</th>
+        <th>NISN</th>
+        <th>Nama Lengkap</th>
+        <th>Aksi</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>1234567890</td>
+        <td>Budi Santoso</td>
+        <td><button class="btn btn-sm btn-primary" onclick="openForm('1234567890','Budi Santoso')">Input</button></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>0987654321</td>
+        <td>Siti Aminah</td>
+        <td><button class="btn btn-sm btn-primary" onclick="openForm('0987654321','Siti Aminah')">Input</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Form Input -->
+  <div id="formSection" class="card mt-5" style="display:none;">
+    <div class="card-header bg-secondary text-white">
+      <h5 class="mb-0">Form Input Pembiasaan</h5>
+    </div>
+    <div class="card-body">
+      <form>
+        <div class="form-group">
+          <label>NISN</label>
+          <input type="text" id="nisn" class="form-control" readonly>
+        </div>
+        <div class="form-group">
+          <label>Nama Lengkap</label>
+          <input type="text" id="nama" class="form-control" readonly>
+        </div>
+        <div class="form-group">
+          <label>Pembiasaan</label>
+          <select class="form-control" required>
+            <option value="">-- Pilih Pembiasaan --</option>
+            <option>Bangun Pagi - Membiasakan diri bangun lebih awal</option>
+            <option>Beribadah - Mendekatkan diri pada Tuhan</option>
+            <option>Berolahraga - Menjaga kesehatan tubuh</option>
+            <option>Makan Sehat Bergizi - Untuk tumbuh kembang optimal</option>
+            <option>Gemar Belajar - Meningkatkan pengetahuan</option>
+            <option>Bermasyarakat - Gotong royong dan toleransi</option>
+            <option>Tidur Cepat / Istirahat Cukup - Menjaga tubuh segar</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Komentar / Kondisi</label>
+          <textarea class="form-control" rows="2"></textarea>
+        </div>
+        <div class="form-group">
+          <label>Tindak Lanjut</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Tanggal</label>
+          <input type="date" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Upload Foto</label>
+          <input type="file" class="form-control-file">
+        </div>
+        <button type="submit" class="btn btn-success">Simpan</button>
+        <button type="button" class="btn btn-secondary" onclick="closeForm()">Batal</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+      <!-- Footer Start -->
+<div class="container-fluid bg-secondary text-white py-5 px-sm-3 px-md-5">
+  <div class="row">
+    <!-- Logo & Nama -->
+    <div class="col-lg-4 col-md-6 mb-4 text-center text-md-left">
+      <a href="../index.html" class="d-inline-flex align-items-center mb-3">
+        <img src="../img/logo.png" alt="Logo" style="width: 40px;" class="mr-2">
+        <span class="h4 text-white font-weight-bold mb-0">SDN 1 PLOSO</span>
+      </a>
+      <p class="mt-3">Sekolah Dasar Negeri unggulan yang mendidik dengan hati, membangun generasi hebat.</p>
+      <div class="d-flex justify-content-center justify-content-md-start mt-3">
+        <a class="btn btn-outline-light btn-sm rounded-circle mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
+        <a class="btn btn-outline-light btn-sm rounded-circle mx-1" href="#"><i class="fab fa-instagram"></i></a>
+        <a class="btn btn-outline-light btn-sm rounded-circle mx-1" href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <!-- Kontak -->
+    <div class="col-lg-4 col-md-6 mb-4">
+      <h5 class="text-primary mb-3">Kontak</h5>
+      <p><i class="fa fa-map-marker-alt mr-2"></i> JL. Letjend MT. Haryono I No. 46 Kabupaten Nganjuk</p>
+      <p><i class="fa fa-envelope mr-2"></i> sdnplosonganjuk266@gmail.com</p>
+      <p><i class="fa fa-phone-alt mr-2"></i> 0358329919 </p>
+    </div>
+
+    <!-- Link Cepat -->
+    <div class="col-lg-4 col-md-6 mb-4">
+      <h5 class="text-primary mb-3">Menu</h5>
+      <div class="d-flex flex-column">
+        <a class="text-white-50 mb-2" href="../index.html">Home</a>
+        <a class="text-white-50 mb-2" href="../about.html">About</a>
+        <a class="text-white-50 mb-2" href="../class.html">Class</a>
+        <a class="text-white-50" href="../contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="text-center pt-4 mt-3" style="border-top: 1px solid rgba(255,255,255,0.1);">
+    <p class="mb-0">&copy; 2025 <strong>SDN 1 PLOSO</strong>. All Rights Reserved.</p>
+    <small>Designed by <a class="text-primary" href="https://htmlcodex.com" target="_blank">HTML Codex</a></small>
+  </div>
+</div>
+<!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary p-3 back-to-top"
+      ><i class="fa fa-angle-double-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/easing/easing.min.js"></script>
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="../lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="../mail/jqBootstrapValidation.min.js"></script>
+    <script src="../mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../js/main.js"></script>
+
+    <script>
+      function openForm(nisn, nama) {
+        document.getElementById("formSection").style.display = "block";
+        document.getElementById("nisn").value = nisn;
+        document.getElementById("nama").value = nama;
+        window.scrollTo({ top: document.getElementById("formSection").offsetTop, behavior: 'smooth' });
+      }
+
+      function closeForm() {
+        document.getElementById("formSection").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
+
