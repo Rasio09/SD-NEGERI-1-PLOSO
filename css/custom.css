@@ -1,0 +1,29 @@
+.btn-primary,
+.bg-primary-classic {
+  background-color: #D32F2F !important;
+  border-color: #D32F2F !important;
+}
+
+.btn-danger,
+.bg-danger-modern {
+  background-color: #E53935 !important;
+  border-color: #E53935 !important;
+}
+
+.bg-secondary,
+.btn-secondary {
+  background-color: #424242 !important;
+  border-color: #424242 !important;
+}
+
+.text-danger {
+  color: #E53935 !important;
+}
+
+.text-primary {
+  color: #D32F2F !important;
+}
+
+.text-secondary {
+  color: #000 !important;
+}

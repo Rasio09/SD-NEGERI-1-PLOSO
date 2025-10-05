@@ -31,6 +31,8 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
   </head>
 
   <body>
@@ -54,7 +56,16 @@
           id="navbarCollapse">
           <div class="navbar-nav font-weight-bold mx-auto py-0">
             <a href="index.html" class="nav-item nav-link active">Home</a>
-            <a href="about.html" class="nav-item nav-link">About</a>
+            <div class="nav-item dropdown">
+              <a href="#"
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown">About</a>
+              <div class="dropdown-menu rounded-0 m-0">
+                <a href="about.html" class="dropdown-item">About</a>
+                <a href="blog.html" class="dropdown-item">Visi</a>
+                <a href="single.html" class="dropdown-item">Misi</a>
+              </div>
+            </div>
             <a href="class.html" class="nav-item nav-link">Class</a>
             <a href="team.html" class="nav-item nav-link">Teacher</a>
             
@@ -62,12 +73,12 @@
           </div>
           <a href="input form.html" class="btn btn-primary px-4" style="font-size: 9pt;">7 KEBIASAAN ANAK INDONESIA HEBAT</a>
         </div>
-      </nav> 
+      </nav>
     </div>
     <!-- Navbar End -->
 
     <!-- Header Start -->
-    <div class="container-fluid bg-primary px-0 px-md-5 mb-5">
+    <div class="container-fluid px-0 bg-primary-classic px-md-5 mb-5"">
       <div class="row align-items-center px-3">
         <div class="col-lg-6 text-center text-lg-left">
           <h4 class="text-white mb-4 mt-5 mt-lg-0">
