@@ -29,10 +29,60 @@
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
 
-    <!-- Customized Bootstrap Stylesheet -->
+    <!-- Customized Bootstrap Stylesheet --> 
     <link href="css/style.css" rel="stylesheet" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
+
+    <style>
+      .about-text {
+        font-size: 15px;
+        line-height: 1.4;
+        text-align: justify;
+        color: #333;
+        background: #fff8f8;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        max-width: 900px;
+        margin: 40px auto;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .about-text p {
+        margin-bottom: 14px;
+      }
+
+      .about-text h2 {
+        text-align: center;
+        font-weight: 500;
+        color: #b71c1c;
+        margin-bottom: 20px;
+      }
+
+        /* Gallery custom style */
+      .gallery-img-box {
+        transition: transform 0.2s;
+      }
+      .gallery-img-box:hover {
+        transform: scale(1.03);
+        z-index: 2;
+      }
+      .portfolio-btn {
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        opacity: 0;
+        transition: 0.3s;
+      }
+      .gallery-img-box:hover .portfolio-btn {
+        opacity: 1;
+      }
+      @media (max-width: 767px) {
+        .gallery-img-box {
+          max-width: 100% !important;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -44,7 +94,7 @@
           class="navbar-brand font-weight-bold text-secondary"
           style="font-size: 50px" >
           <img src="img/logo.png" alt="" style="width: 40px;">
-          <span class="text-primary" style="font-size: 30pt; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">SDN 1 PLOSO</span>
+          <span class="text-primary" style="font-size: 30pt; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">SI RATU GESIT</span>
         </a>
         <button type="button"
           class="navbar-toggler"
@@ -76,14 +126,14 @@
             <img src="img/logo nganjuk.png" alt="" style="width: 30px;">
             <img src="img/tutwuri.png" alt="" style="width: 40px;"> 
             <img src="img/logo.png" alt="" style="width: 40px;">
-            <img src="img/pend.png" alt="" style="width: 70px;"> 
+            <img src="img/pend.png" alt="" style="width: 90px;"> 
             <img src="img/kemen.png" alt="" style="width: 60px;">
           </h4>
           <h1 class="display-4 font-weight-bold text-white" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-            SD NEGERI 1 PLOSO
+            SD NEGERI 1 PLOSO 
           </h1>
           <p class="text-white mb-4">
-            SDN 1 PLOSO NGANJUK adalah salah satu sekolah dasar yang ada di kecamatan PLOSO kabupaten NGANJUK. SDN 1 PLOSO. SDN 1 PLOSO memiliki tepatnya berada di JL. Letjend MT. Haryono I No. 46 Kabupaten Nganjuk."
+            SDN 1 PLOSO NGANJUK merupakan salah satu sekolah dasar negeri yang berlokasi di Kelurahan Ploso, Kecamatan Nganjuk, Kabupaten Nganjuk. Sekolah ini terletak di Jl. Letjen MT. Haryono I No. 46, Nganjuk, dan berkomitmen untuk memberikan pendidikan dasar yang berkualitas bagi seluruh peserta didik.
           </p>
           <a href="input form.html" class="btn btn-secondary mt-1 py-3 px-5">FORM 7 PEMBIASAAN ANAK INDONESIA HEBAT</a>
         </div>
@@ -182,9 +232,23 @@
               <span class="pr-2">About</span>
             </p>
             <h1 class="mb-4">SDN 1 PLOSO</h1>
-            <p>
-              SDN 1 PLOSO NGANJUK adalah salah satu sekolah dasar yang ada di kecamatan PLOSO kabupaten NGANJUK. SDN 1 PLOSO. SDN 1 PLOSO memiliki tepatnya berada di JL. Letjend MT. Haryono I No. 46 Kabupaten Nganjuk. Disamping itu SD Negeri ini sudah melakukan dan menerapkan untuk peserta didiknya 7 pembiasaan anak Indonesia hebat.
-            </p>
+            <div class="about-text">            
+              <p>
+                <strong>SD Negeri 1 Ploso</strong> merupakan salah satu satuan pendidikan dasar yang ada di Kecamatan Nganjuk, Kabupaten Nganjuk. Sekolah ini berkomitmen dalam mewujudkan murid yang <em>cerdas, berkarakter, dan berakhlak mulia</em>. Dalam pelaksanaan program pendidikan, sekolah mengintegrasikan nilai-nilai karakter melalui <strong>Gerakan Tujuh Kebiasaan Anak Indonesia Hebat</strong> sebagai bagian dari pembiasaan positif di lingkungan sekolah, keluarga, dan masyarakat.
+              </p>
+
+              <p>
+                Gerakan ini bertujuan menanamkan nilai-nilai kedisiplinan, tanggung jawab, kepedulian, dan kemandirian sejak dini, sehingga dapat mewujudkan ketercapaian <strong>Delapan Dimensi Profil Lulusan</strong>. Setiap kebiasaan dilaksanakan secara berkesinambungan melalui kegiatan nyata seperti pembiasaan beribadah tepat waktu, membaca sebelum belajar, menjaga kebersihan dan kelestarian lingkungan sekolah, gemar berolahraga, serta menghargai sesama teman dan guru.
+              </p>
+
+              <p>
+                Seluruh warga sekolah terlibat aktif dalam menciptakan suasana belajar yang kondusif dan berkarakter. Guru berperan sebagai teladan dan pembimbing dalam membentuk perilaku positif murid, sementara murid didorong untuk menjadi pribadi yang mandiri, percaya diri, dan bertanggung jawab.
+              </p>
+
+              <p>
+                Melalui penerapan <strong>Gerakan Tujuh Kebiasaan Anak Indonesia Hebat</strong>, SDN 1 Ploso bertekad menjadi sekolah yang tidak hanya unggul dalam prestasi akademik, tetapi juga membentuk generasi penerus bangsa yang <em>sehat, cerdas, berkarakter, dan peduli terhadap lingkungannya</em>.
+              </p>
+            </div>
             
           </div>
         </div>
@@ -316,9 +380,166 @@
 </div>
 <!-- Team End -->
 
+    <!-- Gallery Start -->
+    <div class="container-fluid pt-5 pb-3">
+      <div class="container">
+        <div class="text-center pb-2">
+          <p class="section-title px-5">
+            <span class="px-2">Gallery</span>
+          </p>
+          <h1 class="mb-4">GALLERY ALL SDN 1 PLOSO</h1>
+        </div>
+        <div class="row justify-content-center">
+          <!-- Gallery Item 1 -->
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-10 mb-4 d-flex justify-content-center">
+            <div class="gallery-img-box position-relative overflow-hidden rounded shadow" style="width: 100%; max-width: 340px;">
+              <img class="img-fluid w-100" src="img/gallery-1.png" alt="Gallery 1" style="object-fit:cover; height:220px;" />
+              <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                <a href="img/gallery-1.png" data-lightbox="portfolio">
+                  <i class="fa fa-plus text-white" style="font-size: 60px"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Gallery Item 2 -->
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-10 mb-4 d-flex justify-content-center">
+            <div class="gallery-img-box position-relative overflow-hidden rounded shadow" style="width: 100%; max-width: 340px;">
+              <img class="img-fluid w-100" src="img/gallery-2.png" alt="Gallery 2" style="object-fit:cover; height:220px;" />
+              <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                <a href="img/gallery-2.png" data-lightbox="portfolio">
+                  <i class="fa fa-plus text-white" style="font-size: 60px"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Gallery Item 3 -->
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-10 mb-4 d-flex justify-content-center">
+            <div class="gallery-img-box position-relative overflow-hidden rounded shadow" style="width: 100%; max-width: 340px;">
+              <img class="img-fluid w-100" src="img/gallery-3.png" alt="Gallery 3" style="object-fit:cover; height:220px;" />
+              <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                <a href="img/gallery-3.png" data-lightbox="portfolio">
+                  <i class="fa fa-plus text-white" style="font-size: 60px"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Gallery Item 4 -->
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-10 mb-4 d-flex justify-content-center">
+            <div class="gallery-img-box position-relative overflow-hidden rounded shadow" style="width: 100%; max-width: 340px;">
+              <img class="img-fluid w-100" src="img/gallery-4.png" alt="Gallery 4" style="object-fit:cover; height:220px;" />
+              <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                <a href="img/gallery-4.png" data-lightbox="portfolio">
+                  <i class="fa fa-plus text-white" style="font-size: 60px"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Gallery Item 5 -->
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-10 mb-4 d-flex justify-content-center">
+            <div class="gallery-img-box position-relative overflow-hidden rounded shadow" style="width: 100%; max-width: 340px;">
+              <img class="img-fluid w-100" src="img/gallery-5.png" alt="Gallery 5" style="object-fit:cover; height:220px;" />
+              <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                <a href="img/gallery-5.png" data-lightbox="portfolio">
+                  <i class="fa fa-plus text-white" style="font-size: 60px"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Gallery End -->
+
+    <!-- Video -->
+    <!-- Video Gallery Start -->
+  <div class="container py-5 text-center">
+    <h2 class="mb-4 fw-bold">Video Kegiatan SDN 1 PLOSO</h2>
+    <div class="row justify-content-center g-4">
+      <!-- Video 1 -->
+      <div class="col-md-6 col-sm-12 mb-4 d-flex justify-content-center">
+        <div class="video-wrapper position-relative rounded overflow-hidden shadow" style="width:100%; max-width:400px; cursor:pointer;">
+          <video id="video1" class="w-100 rounded" style="height:550px; object-fit:cover;">
+            <source src="img/video 1.mp4" type="video/mp4">
+            Browser Anda tidak mendukung video.
+          </video>
+          <div id="playBtn1"
+              class="position-absolute top-50 start-50 translate-middle bg-white rounded-circle shadow d-flex justify-content-center align-items-center"
+              style="width:55px; height:55px; cursor:pointer;">
+            <i class="fa fa-play text-danger fs-3"></i>
+          </div>
+        </div>
+      </div>
+      <!-- Video 2 -->
+      <div class="col-md-6 col-sm-12 mb-4 d-flex justify-content-center">
+        <div class="video-wrapper position-relative rounded overflow-hidden shadow" style="width:100%; max-width:400px; cursor:pointer;">
+          <video id="video2" class="w-100 rounded" style="height:550px; object-fit:cover;">
+            <source src="img/video 2.mp4" type="video/mp4">
+            Browser Anda tidak mendukung video.
+          </video>
+          <div id="playBtn2"
+              class="position-absolute top-50 start-50 translate-middle bg-white rounded-circle shadow d-flex justify-content-center align-items-center"
+              style="width:55px; height:55px; cursor:pointer;">
+            <i class="fa fa-play text-danger fs-3"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Video Gallery End -->
+
+  <style>
+    .video-wrapper {
+      background: #222;
+      margin-bottom: 20px;
+    }
+    .video-wrapper video {
+      display: block;
+    }
+    @media (max-width: 575px) {
+      .video-wrapper {
+        max-width: 100% !important;
+      }
+      .video-wrapper video {
+        height: 400px !important;
+      }
+    }
+  </style>
+
+  <script>
+    function setupVideo(videoId, btnId) {
+      const video = document.getElementById(videoId);
+      const playBtn = document.getElementById(btnId);
+
+      // Play video when play button or video area is clicked
+      playBtn.addEventListener('click', () => {
+        playBtn.style.display = 'none';
+        video.play();
+      });
+      video.addEventListener('click', () => {
+        if (video.paused) {
+          playBtn.style.display = 'none';
+          video.play();
+        } else {
+          video.pause();
+        }
+      });
+
+      video.addEventListener('pause', () => {
+        playBtn.style.display = 'flex';
+      });
+
+      video.addEventListener('ended', () => {
+        playBtn.style.display = 'flex';
+        video.currentTime = 0;
+      });
+    }
+
+    setupVideo('video1', 'playBtn1');
+    setupVideo('video2', 'playBtn2');
+  </script>
+    <!-- video end -->
 
  
-
     <!-- Footer Start -->
 <div class="container-fluid bg-secondary text-white py-5 px-sm-3 px-md-5">
   <div class="row">
@@ -359,7 +580,7 @@
   <!-- Copyright -->
   <div class="text-center pt-4 mt-3" style="border-top: 1px solid rgba(255,255,255,0.1);">
     <p class="mb-0">&copy; 2025 <strong>SDN 1 PLOSO</strong>. All Rights Reserved.</p>
-    <small>Designed by <a class="text-primary" href="https://htmlcodex.com" target="_blank">HTML Codex</a></small>
+    <small style="font-size: 7pt;">Designed by <a class="text-primary" href="https://htmlcodex.com" target="_blank">HTML Codex</a></small>
   </div>
 </div>
 <!-- Footer End -->

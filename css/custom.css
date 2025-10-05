@@ -1,6 +1,6 @@
 .btn-primary,
 .bg-primary-classic, .bg-primary{
-  background-color: #D32F2F !important;
+  background: linear-gradient(180deg, #b83e3c 0%, #8a2020 60%, #380202 100%) !important;
   border-color: #D32F2F !important;
 }
 
