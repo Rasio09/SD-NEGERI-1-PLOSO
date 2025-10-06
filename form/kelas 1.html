@@ -94,29 +94,110 @@
         <th>No</th>
         <th>NISN</th>
         <th>Nama Lengkap</th>
+        <th>Kelas</th>
         <th>Aksi</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td>1</td>
-        <td>1234567890</td>
-        <td>Budi Santoso</td>
-        <td><button class="btn btn-sm btn-primary" onclick="openForm('1234567890','Budi Santoso')">Input</button></td>
+        <td>3181973106</td>
+        <td>ARUM KUSUMAWATI</td>
+        <td>1</td>
+        <td><button class="btn btn-sm btn-primary" onclick="openForm('3181973106','ARUM KUSUMAWATI','1')">Input</button></td>
       </tr>
       <tr>
         <td>2</td>
-        <td>0987654321</td>
-        <td>Siti Aminah</td>
-        <td><button class="btn btn-sm btn-primary" onclick="openForm('0987654321','Siti Aminah')">Input</button></td>
+        <td>3187926155</td>
+        <td>AULIA RAHMADINI</td>
+        <td>1</td>
+        <td><button class="btn btn-sm btn-primary" onclick="openForm('3187926155','AULIA RAHMADINI','1')">Input</button></td>
       </tr>
+      <tr>
+        <td>3</td>
+        <td>3185210393</td>
+        <td>AZZAFIRA NAFISAH ALTHAFUNNISA</td>
+        <td>1</td>
+        <td><button class="btn btn-sm btn-primary" onclick="openForm('3185210393','AZZAFIRA NAFISAH ALTHAFUNNISA','1')">Input</button></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>3187872644</td>
+        <td>CHERIKA NURMAULINA RAMADHANI</td>
+        <td>1</td>
+        <td><button class="btn btn-sm btn-primary" onclick="openForm('3187872644','CHERIKA NURMAULINA RAMADHANI','1')">Input</button></td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>3188292171</td>
+        <td>EROSS ABINAYA</td>
+        <td>1</td>
+        <td><button class="btn btn-sm btn-primary" onclick="openForm('3188292171','EROSS ABINAYA','1')">Input</button></td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>3188277418</td>
+        <td>GALIH RIZKY SUBKHI</td>
+        <td>1</td>
+        <td><button class="btn btn-sm btn-primary" onclick="openForm('3188277418','GALIH RIZKY SUBKHI','1')">Input</button></td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>3186739470</td>
+        <td>HANIFA AYU ANDITA PUTRI</td>
+        <td>1</td>
+        <td><button class="btn btn-sm btn-primary" onclick="openForm('3186739470','HANIFA AYU ANDITA PUTRI','1')">Input</button></td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>3189006632</td>
+        <td>LUCIA ARINDRA</td>
+        <td>1</td>
+        <td><button class="btn btn-sm btn-primary" onclick="openForm('3189006632','LUCIA ARINDRA','1')">Input</button></td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>3187977508</td>
+        <td>MAFAZA PADMA KESHWARI</td>
+        <td>1</td>
+        <td><button class="btn btn-sm btn-primary" onclick="openForm('3187977508','MAFAZA PADMA KESHWARI','1')">Input</button></td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>3188211991</td>
+        <td>MUHAMMAD AMRU UBAYDILLAH</td>
+        <td>1</td>
+        <td><button class="btn btn-sm btn-primary" onclick="openForm('3188211991','MUHAMMAD AMRU UBAYDILLAH','1')">Input</button></td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>3180285631</td>
+        <td>NADIRA MAULIDA NOVRISYAFIK</td>
+        <td>1</td>
+        <td><button class="btn btn-sm btn-primary" onclick="openForm('3180285631','NADIRA MAULIDA NOVRISYAFIK','1')">Input</button></td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>3180787245</td>
+        <td>VIANA ALNAIRA NUR HALIMAH</td>
+        <td>1</td>
+        <td><button class="btn btn-sm btn-primary" onclick="openForm('3180787245','VIANA ALNAIRA NUR HALIMAH','1')">Input</button></td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>3194788858</td>
+        <td>CANTYA AZZAHRA ARETHA</td>
+        <td>1</td>
+        <td><button class="btn btn-sm btn-primary" onclick="openForm('3194788858','CANTYA AZZAHRA ARETHA','1')">Input</button></td>
+      </tr>
+
     </tbody>
   </table>
 
   <!-- Form Input -->
   <div id="formSection" class="card mt-5" style="display:none;">
     <div class="card-header bg-secondary text-white">
-      <h5 class="mb-0">Form Input Pembiasaan</h5>
+      <h5 class="mb-0" style="color: aliceblue;">Form Input Pembiasaan</h5>
     </div>
     <div class="card-body">
       <form>
@@ -127,6 +208,10 @@
         <div class="form-group">
           <label>Nama Lengkap</label>
           <input type="text" id="nama" class="form-control" readonly>
+        </div>
+        <div class="form-group">
+          <label>Kelas</label>
+          <input type="text" id="kelas" class="form-control" readonly>
         </div>
         <div class="form-group">
           <label>Pembiasaan</label>
@@ -204,7 +289,7 @@
   <!-- Copyright -->
   <div class="text-center pt-4 mt-3" style="border-top: 1px solid rgba(255,255,255,0.1);">
     <p class="mb-0">&copy; 2025 <strong>SDN 1 PLOSO</strong>. All Rights Reserved.</p>
-    <small>Designed by <a class="text-primary" href="https://htmlcodex.com" target="_blank">HTML Codex</a></small>
+    <small style="font-size: 7pt;">Designed by <a class="text-primary" href="https://htmlcodex.com" target="_blank">HTML Codex</a></small>
   </div>
 </div>
 <!-- Footer End -->
@@ -230,10 +315,11 @@
     <script src="../js/main.js"></script>
 
     <script>
-      function openForm(nisn, nama) {
+      function openForm(nisn, nama, kelas) {
         document.getElementById("formSection").style.display = "block";
         document.getElementById("nisn").value = nisn;
         document.getElementById("nama").value = nama;
+        document.getElementById("kelas").value = kelas;
         window.scrollTo({ top: document.getElementById("formSection").offsetTop, behavior: 'smooth' });
       }
 
