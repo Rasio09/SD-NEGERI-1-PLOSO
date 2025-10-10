@@ -484,11 +484,7 @@
         <div class="card-body">
           <form
             id="dataForm"
-            method="POST"
-            encrytype="multipart/form-data"
-            onsubmit="submitForm(event)"
           >
-            <input type="hidden" name="target_kelas" value="2" />
 
             <div class="form-group">
               <label>NISN</label>
@@ -579,7 +575,6 @@
                 name="foto"
                 accept="image/*"
                 class="form-control-file"
-                onchange="validateFile(this)"
               />
               <div class="file-info">Format: JPG, PNG, GIF (Maks. 2MB)</div>
               <div class="file-error" id="fileError"></div>
@@ -741,116 +736,6 @@
         }
         return element;
       }
-      // Fungsi untuk validasi file
-      function validateFile(input) {
-        const fileError = getElementSafe("fileError");
-        const file = input.files[0];
-
-        fileError.style.display = "none";
-        fileError.textContent = "";
-
-        if (file) {
-          const maxSize = 2 * 1024 * 1024; // 2MB
-          if (file.size > maxSize) {
-            fileError.textContent = "Ukuran file terlalu besar! Maksimal 2MB.";
-            fileError.style.display = "block";
-            input.value = "";
-            return false;
-          }
-
-          const allowedTypes = ["image/jpeg", "image/png", "image/gif"];
-          if (!allowedTypes.includes(file.type)) {
-            fileError.textContent =
-              "Format file tidak didukung! Hanya JPG, PNG, dan GIF.";
-            fileError.style.display = "block";
-            input.value = "";
-            return false;
-          }
-        }
-        return true;
-      }
-
-      // Fungsi utama untuk submit form
-      function submitForm(event) {
-        event.preventDefault(); 
-
-        const form = getElementSafe("dataForm");
-        const submitBtn = getElementSafe("submitBtn");
-        const loading = getElementSafe("loading");
-
-        // Null checking untuk elemen yang diperlukan
-        if (!form || !submitBtn) {
-          console.error("Form elements not found!");
-          return false;
-        }
-
-        // Validasi file sebelum submit
-        const fileInput = getElementSafe("foto");
-        if (fileInput.files.length > 0 && !validateFile(fileInput)) {
-          return false;
-        }
-
-        // Tampilkan loading
-        submitBtn.disabled = true;
-        submitBtn.textContent = "Menyimpan...";
-        if (loading) {
-          loading.style.display = "block";
-        }
-
-        // Kirim data via AJAX
-        const formData = new FormData(form);
-
-        fetch(".././save_data.php", {
-          method: "POST",
-          body: formData,
-        })
-          .then((response) => {
-            if (!response.ok) {
-              throw new Error("Network response was not ok");
-            }
-            return response.text();
-          })
-          .then((data) => {
-            console.log("Response:", data);
-
-            // Cek jika response mengandung success message
-            if (data.includes("success") || data.includes("berhasil")) {
-              showAlert(
-                "success",
-                "Sukses!",
-                "Data berhasil disimpan ke database."
-              );
-              form.reset();
-              closeForm();
-            } else {
-              // Extract error message dari response
-              const errorMatch = data.match(/Error:(.*?)(?=<br>|$)/);
-              const errorMessage = errorMatch
-                ? errorMatch[1].trim()
-                : "Terjadi kesalahan saat menyimpan data.";
-              showAlert("error", "Error!", errorMessage);
-            }
-          })
-          .catch((error) => {
-            console.error("Error:", error);
-            showAlert(
-              "error",
-              "Error!",
-              "Terjadi kesalahan jaringan: " + error.message
-            );
-          })
-          .finally(() => {
-            // Reset button state
-            submitBtn.disabled = false;
-            submitBtn.textContent = "Simpan Data";
-            loading.style.display = "none";
-          });
-      }
-
-      // Real-time file validation
-      document.getElementById("foto").addEventListener("change", function (e) {
-        validateFile(this);
-      });
     </script>
   </body>
 </html>
