@@ -1,13 +1,19 @@
 .btn-primary,
-.bg-primary-classic, .bg-primary{
-  background: linear-gradient(180deg, #b83e3c 0%, #8a2020 60%, #380202 100%) !important;
-  border-color: #D32F2F !important;
+.bg-primary-classic,
+.bg-primary {
+  background: linear-gradient(
+    180deg,
+    #b83e3c 0%,
+    #8a2020 60%,
+    #380202 100%
+  ) !important;
+  border-color: #d32f2f !important;
 }
 
 .btn-danger,
 .bg-danger-modern {
-  background-color: #E53935 !important;
-  border-color: #E53935 !important;
+  background-color: #e53935 !important;
+  border-color: #e53935 !important;
 }
 
 .bg-secondary,
@@ -17,13 +23,103 @@
 }
 
 .text-danger {
-  color: #E53935 !important;
+  color: #e53935 !important;
 }
 
 .text-primary {
-  color: #D32F2F !important;
+  color: #d32f2f !important;
 }
 
 .text-secondary {
   color: #000 !important;
+}
+
+.success {
+  color: green;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+}
+.error {
+  color: red;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+}
+.file-error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  display: none;
+}
+.file-info {
+  color: #666;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.alert-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.alert-box {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+.alert-box.success {
+  border-left: 5px solid #28a745;
+}
+.alert-box.error {
+  border-left: 5px solid #dc3545;
+}
+.alert-title {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.alert-message {
+  margin-bottom: 20px;
+  color: #666;
+}
+.alert-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.progress-bar {
+  width: 100%;
+  height: 4px;
+  background: #f0f0f0;
+  border-radius: 2px;
+  margin-top: 5px;
+  overflow: hidden;
+  display: none;
+}
+.progress-fill {
+  height: 100%;
+  background: #007bff;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+.loading {
+  display: none;
+  text-align: center;
+  padding: 10px;
 }
